@@ -1,0 +1,48 @@
+.card {
+    width:330px;
+    height:190px;
+    @apply rounded-lg text-white
+}
+
+.front-card {
+    background-image: url('/public/card-form/bg-card-front.png');
+    @apply absolute order-1 -mt-12 -ml-6 left-0 p-6 grid grid-rows-3 md:static md:order-1
+    
+}
+
+.back-card {
+    background-image: url('/public/card-form/bg-card-back.png');
+    @apply -mr-6 order-2 relative md:mt-10 md:ml-10 
+}
+
+.cards{
+    @apply w-full h-full flex justify-center items-center
+}
+
+.cards-container {
+    @apply relative md:flex md:flex-col md:pl-1/2
+}
+
+.card-logo {
+    @apply w-full row-span-2
+}
+
+.card-number {
+    @apply text-2xl text-left
+}
+
+.card-down-section {
+    @apply flex justify-between items-center text-sm
+}
+
+.cvc {
+    @apply  absolute right-10 top-1/2 -mt-3
+}
+
+@media (min-width: 769px) {
+    .card {
+        width:375px;
+        height:240px;
+    }
+ 
+  }
